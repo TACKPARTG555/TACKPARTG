@@ -410,7 +410,7 @@ if administration[tostring(arg.chat_id)]['is_silent_users'][tostring(data.id_)] 
     if not lang then
      return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is already_ *silent*", 0, "md")
   else
-     return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* *از قبل توانایی چت کردن رو نداشت*", 0, "md")
+     return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* *از قبل توانایی چت کردن رو نداشت*", 0, .."md")
      end
    end
 administration[tostring(arg.chat_id)]['is_silent_users'][tostring(data.id_)] = user_name
